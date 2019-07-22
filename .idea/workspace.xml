@@ -1,7 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f295a6c8-9bea-4a97-b2fd-8a065b13be60" name="Default Changelist" comment="" />
+    <list default="true" id="f295a6c8-9bea-4a97-b2fd-8a065b13be60" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/META-INF/SpringFirst.main.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/ind/amirali/App.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/ind/amirali/Controllers/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/ind/amirali/Repository/PersonRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/ind/amirali/Repository/UserDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/ind/amirali/Services/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/ind/amirali/domain/UserDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/ind/amirali/model/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/user.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ind/amirali/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ind/amirali/Controllers/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ind/amirali/Repository/PersonRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ind/amirali/Repository/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ind/amirali/Services/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ind/amirali/domain/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ind/amirali/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/user.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ind/amirali/AppTest.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -159,6 +199,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -186,6 +229,7 @@
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -283,6 +327,7 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -340,19 +385,18 @@
       <option name="presentableId" value="Default" />
       <updated>1563771671870</updated>
       <workItem from="1563771674718" duration="12342000" />
-      <workItem from="1563786505735" duration="8573000" />
+      <workItem from="1563786505735" duration="8910000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20915000" />
+    <option name="totallyTimeSpent" value="21252000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="7" />
-    <editor active="true" />
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49517685" visible="true" weight="0.18926397" />
-      <window_info id="Structure" order="1" sideWeight="0.50482315" side_tool="true" visible="true" weight="0.18926397" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4951613" visible="true" weight="0.18926397" />
+      <window_info id="Structure" order="1" sideWeight="0.5048387" side_tool="true" visible="true" weight="0.18926397" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -361,14 +405,14 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4997233" visible="true" weight="0.3297414" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4997233" weight="0.3297414" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.31034482" />
       <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.33045357" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5002767" side_tool="true" weight="0.3297414" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3297414" />
