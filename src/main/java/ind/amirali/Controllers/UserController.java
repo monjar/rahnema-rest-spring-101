@@ -44,6 +44,12 @@ public class UserController {
     public List<User> getBalance(@PathVariable Double amount){
         return this.userService.getByBalance(amount);
     }
+    @GetMapping("/a")
+    public void a() {
+        throw new ArithmeticException();
+    }
+
+
    /*
     @PutMapping("/users/{id}")
     public void update(@PathVariable Integer id, @RequestBody UserDTO userDto){
