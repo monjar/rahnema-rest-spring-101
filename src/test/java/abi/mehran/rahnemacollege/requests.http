@@ -1,0 +1,42 @@
+### List All Users
+GET http://localhost:8080/users
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+### Add New User
+POST http://localhost:8080/users
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+{
+  "firstName": "Mohammad",
+  "lastName": "Jafari"
+}
+
+### Get User With Wrong ID
+GET http://localhost:8080/user/5d3e999359acf441a2834c85
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+### Get User With Correct ID
+GET http://localhost:8080/user/5d3e999359acf441a2834c84
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+### Delete User With Correct ID
+DELETE http://localhost:8080/user/5d3e999359acf441a2834c84
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+### Delete User With Wrong ID
+DELETE http://localhost:8080/user/5d3e999359acf441a2834c85
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+###
