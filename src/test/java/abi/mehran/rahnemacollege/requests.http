@@ -22,13 +22,13 @@ Cache-Control: no-cache
 Content-Type: application/json
 
 ### Get User With Correct ID
-GET http://localhost:8080/user/5d3e999359acf441a2834c84
+GET http://localhost:8080/user/5d3e9d7259acf4428e4e7100
 Accept: application/json
 Cache-Control: no-cache
 Content-Type: application/json
 
 ### Delete User With Correct ID
-DELETE http://localhost:8080/user/5d3e999359acf441a2834c84
+DELETE http://localhost:8080/user/5d3e9d7259acf4428e4e7100
 Accept: application/json
 Cache-Control: no-cache
 Content-Type: application/json

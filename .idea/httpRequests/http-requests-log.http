@@ -1,0 +1,50 @@
+GET http://localhost:8080/user/5d3e9d7259acf4428e4e7100
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2019-07-29T010224.200.json
+
+###
+
+GET http://localhost:8080/users
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2019-07-29T010159.200.json
+
+###
+
+GET http://localhost:8080/user/5d3e999359acf441a2834c84
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2019-07-29T010151.500.json
+
+###
+
+GET http://localhost:8080/users
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2019-07-29T010123.200.json
+
+###
+
+GET http://localhost:8080/users
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/users
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: application/json
+
+###
+
