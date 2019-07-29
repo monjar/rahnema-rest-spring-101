@@ -25,6 +25,14 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok:1.18.8'
     compile 'org.springframework.boot:spring-boot-starter-data-mongodb'
     compile 'org.springframework.boot:spring-boot-starter-hateoas'
-    
+    // JPA Data (We are going to use Repositories, Entities, Hibernate)
+
+    compile 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+
+
+    // Use MySQL Connector-J
+
+    compile 'mysql:mysql-connector-java'
 
 }

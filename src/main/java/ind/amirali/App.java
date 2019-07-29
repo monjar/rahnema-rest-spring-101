@@ -3,12 +3,29 @@
  */
 package ind.amirali;
 
+import ind.amirali.Repository.GuysRepository;
+import ind.amirali.Repository.OrderRepository;
+import ind.amirali.model.DeliveryGuy;
+import ind.amirali.model.Order;
+import org.aspectj.weaver.ast.Or;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration;
 
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
 @SpringBootApplication(exclude = {JacksonAutoConfiguration.class})
-public class App {
+public class App implements CommandLineRunner {
+
+    private OrderRepository orderRepository;
+    private GuysRepository guysRepository;
+    public App(OrderRepository orderRepository){
+        this.orderRepository = orderRepository;
+    }
     public String getGreeting() {
         return "Hello world.";
     }
@@ -16,5 +33,34 @@ public class App {
     public static void main(String[] args) {
 
         SpringApplication.run(App.class, args);
+    }
+
+    @Override
+    public void run(String... args) throws Exception {
+        Order order = new Order("1", new Date());
+        Order order2 = new Order("2", new Date());
+        Order order3 = new Order("3", new Date());
+        Order order4 = new Order("4", new Date());
+        Order order5 = new Order("5", new Date());
+//        List<Order> list= new ArrayList<>();
+//        list.add(order);
+//        list.add(order2);
+//        list.add(order3);
+//        list.add(order4);
+//        list.add(order5);
+        DeliveryGuy deliveryGuy = new DeliveryGuy("guuuy");
+        order.setDeliveryGuy(deliveryGuy);
+        order2.setDeliveryGuy(deliveryGuy);
+        order3.setDeliveryGuy(deliveryGuy);
+        order4.setDeliveryGuy(deliveryGuy);
+        order5.setDeliveryGuy(deliveryGuy);
+
+        orderRepository.save(order);
+        orderRepository.save(order4);
+        orderRepository.save(order2);
+        orderRepository.save(order3);
+        orderRepository.save(order5);
+        System.out.println(orderRepository.findAll());
+        System.out.println(guysRepository.findAll());
     }
 }
