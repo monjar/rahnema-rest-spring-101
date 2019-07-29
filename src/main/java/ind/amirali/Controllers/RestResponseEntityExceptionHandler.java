@@ -1,3 +1,4 @@
+package ind.amirali.Controllers;
 import com.google.gson.Gson;
 import ind.amirali.Controllers.apilevelexception.EntityNotFoundException;
 import org.springframework.http.HttpHeaders;
@@ -13,13 +14,11 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 public class RestResponseEntityExceptionHandler extends ResponseEntityExceptionHandler {
 
 
-
     static class ExceptionMessage {
 
         String message;
 
         int code;
-
 
 
         public ExceptionMessage(String message, int code) {
@@ -33,7 +32,6 @@ public class RestResponseEntityExceptionHandler extends ResponseEntityExceptionH
     }
 
 
-
     private Gson gson;
 
     public RestResponseEntityExceptionHandler() {
@@ -43,14 +41,15 @@ public class RestResponseEntityExceptionHandler extends ResponseEntityExceptionH
     }
 
 
-
     @ExceptionHandler(value = {NullPointerException.class})
 
     protected ResponseEntity<Object> handleConflict(RuntimeException ex,
 
+
                                                     WebRequest request) {
 
         String bodyOfResponse = gson.toJson(
+
 
                 new ExceptionMessage(ex.getMessage(), 456));
 
@@ -66,7 +65,7 @@ public class RestResponseEntityExceptionHandler extends ResponseEntityExceptionH
 
     protected ResponseEntity<Object> handleEntityNotFound(RuntimeException ex,
 
-                                                    WebRequest request) {
+                                                          WebRequest request) {
 
         String bodyOfResponse = gson.toJson(
 
@@ -79,7 +78,6 @@ public class RestResponseEntityExceptionHandler extends ResponseEntityExceptionH
                 request);
 
     }
-
 
 
 }
