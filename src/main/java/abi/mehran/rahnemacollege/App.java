@@ -4,6 +4,7 @@ import abi.mehran.rahnemacollege.model.Post;
 import abi.mehran.rahnemacollege.model.User;
 import abi.mehran.rahnemacollege.repository.PostRepositoryMysql;
 import abi.mehran.rahnemacollege.repository.UserRepositoryMysql;
+import com.github.javafaker.Faker;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -28,17 +29,20 @@ public class App implements CommandLineRunner {
         userRepository.deleteAll();
         postRepository.deleteAll();
 
-        User user = new User();
-        user.setFirstName("Mehran");
-        user.setLastName("Abghari");
-
-        userRepository.save(user);
-
-        Post post = new Post();
-        post.setTitle("Salam");
-        post.setBody("This is a greeting post!");
-        post.setUser(user);
-
-        postRepository.save(post);
+        for (int i = 0; i < 10; i++) {
+            Faker faker1 = new Faker();
+            User user = new User();
+            user.setFirstName(faker1.name().firstName());
+            user.setLastName(faker1.name().lastName());
+            userRepository.save(user);
+            for (int j = 0; j < 10; j++) {
+                Faker faker2 = new Faker();
+                Post post = new Post();
+                post.setTitle(faker2.book().title());
+                post.setBody(faker2.lorem().paragraph());
+                post.setUser(user);
+                postRepository.save(post);
+            }
+        }
     }
 }
