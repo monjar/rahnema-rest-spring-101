@@ -1,5 +1,6 @@
 package ind.amirali.Controllers;
 
+import ind.amirali.Controllers.apilevelexception.EntityNotFoundException;
 import ind.amirali.Services.UserService;
 import ind.amirali.domain.UserDTO;
 import ind.amirali.model.User;
@@ -7,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 public class UserController {
@@ -36,7 +38,8 @@ public class UserController {
 
     @GetMapping("/users/{id}")
     public User getOne(@PathVariable String id){
-        return userService.get(id);
+        Optional<User> userOptional =  userService.get(id);
+        return userOptional.orElseThrow(()-> new EntityNotFoundException(id));
 
     }
 

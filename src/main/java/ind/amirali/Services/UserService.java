@@ -9,6 +9,8 @@ import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
+
 @Service
 public class UserService {
 
@@ -24,12 +26,12 @@ public class UserService {
         return this.repository.findAll();
     }
 
-    public  User get(String id){
-//         return this.repository.findOne(Example.of(new User(id))).get();
-        if (this.repository.findById(id).isPresent())
-            return this.repository.findById(id).get();
-        else
-            return null;
+    public Optional<User> get(String id){
+////         return this.repository.findOne(Example.of(new User(id))).get();
+//        if (this.repository.findById(id).isPresent())
+            return this.repository.findById(id);
+//        else
+//            return null;
     }
 
     public List<User> getByBalance(Double balance){

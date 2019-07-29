@@ -29,6 +29,7 @@ public class ErrorController101 implements ErrorController {
 
 
 
+
         // in vase safe khoshgel neshoon dadan bood
 //        Object status = request.getAttribute(RequestDispatcher.ERROR_STATUS_CODE);
 //        model.addAttribute("status", status);
