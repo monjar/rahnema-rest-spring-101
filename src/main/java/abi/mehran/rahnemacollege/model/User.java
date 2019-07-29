@@ -1,19 +1,26 @@
 package abi.mehran.rahnemacollege.model;
 
-import lombok.*;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import javax.persistence.*;
+import java.util.Set;
 
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
-@RequiredArgsConstructor
-@Document(collection = "users")
+@Entity
+@Table(name = "users")
 public class User {
     @Id
-    private String id;
-    @NonNull
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+
+    @Column(name = "first_name")
     private String firstName;
-    @NonNull
+
+    @Column(name = "last_name")
     private String lastName;
+
+    @OneToMany(mappedBy = "user")
+    private Set<Post> posts;
 }

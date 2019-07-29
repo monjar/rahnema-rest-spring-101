@@ -1,7 +1,7 @@
 package abi.mehran.rahnemacollege.service;
 
-import abi.mehran.rahnemacollege.model.User;
-import abi.mehran.rahnemacollege.repository.UserRepositoryMysql;
+import abi.mehran.rahnemacollege.model.Post;
+import abi.mehran.rahnemacollege.repository.PostRepositoryMysql;
 import com.google.common.collect.Lists;
 import org.springframework.stereotype.Service;
 
@@ -9,15 +9,15 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class UserServiceImpl implements UserService {
+public class PostServiceImpl implements PostService {
 
-    private final UserRepositoryMysql repository;
+    private final PostRepositoryMysql repository;
 
-    public UserServiceImpl(UserRepositoryMysql repository) {
+    public PostServiceImpl(PostRepositoryMysql repository) {
         this.repository = repository;
     }
 
-    public User add(User user) {
+    public Post add(Post user) {
         return this.repository.save(user);
     }
 
@@ -25,11 +25,11 @@ public class UserServiceImpl implements UserService {
         this.repository.deleteById(id);
     }
 
-    public List<User> all() {
+    public List<Post> all() {
         return Lists.newArrayList(this.repository.findAll());
     }
 
-    public Optional<User> get(Long id) {
+    public Optional<Post> get(Long id) {
         return this.repository.findById(id);
     }
 }

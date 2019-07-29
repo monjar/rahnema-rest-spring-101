@@ -8,9 +8,8 @@ import java.util.Optional;
 public interface UserService {
     User add(User user);
 
-    void delete(String id);
-
+    void delete(Long id);
     List<User> all();
 
-    Optional<User> get(String id);
+    Optional<User> get(Long id);
 }
